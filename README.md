@@ -64,5 +64,5 @@ Este projeto é fornecido sob licença MIT. Você pode usá-lo, modificá-lo e r
 ## Contato
 
 Para sugestões, melhorias ou consultoria:
-**Seu Nome**
-[seuemail@dominio.com](mailto:seuemail@dominio.com)
+**Vinicius Policarpo**
+[vpspolicarpo@gmail.com]
