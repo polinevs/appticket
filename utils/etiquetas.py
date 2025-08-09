@@ -5,7 +5,7 @@ import os
 
 def gerar_etiqueta_pdf(produto, servico, descricao, preco, codigo,
                        funcionario, nota_cliente, metodo_pagamento,
-                       logo_path="utils/logo.jpeg"):
+                       logo_path="assets/logo.jpeg"):
 
     # Criação de pasta se não existir
     pasta = "etiquetas"
@@ -27,7 +27,7 @@ def gerar_etiqueta_pdf(produto, servico, descricao, preco, codigo,
 
     # Informações da empresa
     y = altura - 30 * mm
-    c.setFont("Helvetica-Bold", 8)
+    c.setFont("Helvetica-Bold", 7)
     c.drawString(margem, y, "Movil PLus")
     y -= 5
     c.setFont("Helvetica", 7)
@@ -85,4 +85,5 @@ def gerar_etiqueta_pdf(produto, servico, descricao, preco, codigo,
         y -= 7
 
     c.save()
+
     return nome_arquivo
