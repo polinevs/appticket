@@ -29,7 +29,7 @@ def gerar_etiqueta_pdf(produto, servico, descricao, preco, codigo,
     y = altura - 30 * mm
     c.setFont("Helvetica-Bold", 7)
     c.drawString(margem, y, "Movil PLus")
-    y -= 5
+    y -= 10
     c.setFont("Helvetica", 7)
     c.drawString(margem, y, "Calle Caracas, 6 - Fraga (Huesca)")
     y -= 10
@@ -87,3 +87,4 @@ def gerar_etiqueta_pdf(produto, servico, descricao, preco, codigo,
     c.save()
 
     return nome_arquivo
+
