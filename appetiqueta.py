@@ -50,7 +50,7 @@ if submitted:
             with open(caminho_logo, "wb") as f:
                 f.write(logo_path.getbuffer())
         else:
-            caminho_logo = "logo.jpeg"  # default se não carregar
+            caminho_logo = "assets/logo.jpeg"  # default se não carregar
 
         caminho_pdf = gerar_etiqueta_pdf(
             produto, servico, descricao, preco, codigo,
@@ -65,4 +65,5 @@ if submitted:
         # Botão para imprimir diretamente (abre o PDF no navegador)
         if st.button("🖨️ Imprimir Etiqueta"):
             caminho_absoluto = os.path.abspath(caminho_pdf)
+
             webbrowser.open(f"file://{caminho_absoluto}")
