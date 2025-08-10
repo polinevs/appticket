@@ -45,7 +45,7 @@ if submitted:
         st.warning("Rellene todos los campos obligatórios.")
     else:
         # Se o usuário carregar um novo logo, salvamos temporariamente
-        caminho_logo = "logo.jpeg"
+        caminho_logo = "assets/logo.jpeg"
         if logo_path:
             with open(caminho_logo, "wb") as f:
                 f.write(logo_path.getbuffer())
@@ -67,3 +67,4 @@ if submitted:
             caminho_absoluto = os.path.abspath(caminho_pdf)
 
             webbrowser.open(f"file://{caminho_absoluto}")
+
